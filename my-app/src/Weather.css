@@ -1,0 +1,162 @@
+.mb-3 {
+  margin: 5px auto;
+  display: block;
+  box-shadow: 1px 1px rgb(177, 159, 255);
+}
+
+.mb-3 .form-control {
+  text-align: center;
+}
+
+.btn-success {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 1px;
+  width: 35px;
+}
+
+a .btn-success {
+  background-color: rgb(206, 169, 206);
+  border: 1px solid #dadde1;
+  box-shadow: 1px 1px 7px rgb(177, 159, 255);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  text-shadow: 3px 2px rgb(248, 231, 231);
+  font-size: 28px;
+}
+
+.circle {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(
+    -225deg,
+    rgb(82, 113, 196) 0%,
+    rgb(177, 159, 255) 48%,
+    rgb(236, 161, 254) 100%
+  );
+  border: 15px solid rgb(248, 231, 231);
+  box-shadow: 3px 3px 7px rgb(177, 159, 255);
+}
+
+.circle img {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: -30px;
+}
+
+.circle .text {
+  position: relative;
+  bottom: -5px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.units {
+  position: relative;
+  right: -147px;
+  bottom: 5px;
+}
+
+a.active {
+  cursor: default;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.row {
+  text-align: center;
+  padding: 5px;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+}
+
+.col-4 {
+  padding: 2px;
+  position: relative;
+  bottom: -20px;
+}
+
+.weather-forecast-date {
+  font-size: 10px;
+  color: aliceblue;
+  text-shadow: 1px 0px rgb(248, 231, 231);
+  opacity: 0.7;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+  font-size: 5px;
+}
+
+a.link {
+  color: rgb(39, 0, 39);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h3 {
+  position: relative;
+  bottom: -30px;
+  right: 30px;
+  font-size: 38px;
+}
+
+em {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px rgb(196, 189, 189);
+  font-size: 15px;
+}
+
+hr {
+  padding: 3px;
+}
+
+p {
+  position: relative;
+  bottom: -5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px 7px rgb(196, 189, 189);
+  font-size: 13px;
+}
+
+p::first-letter {
+  text-transform: capitalize;
+}
+
+footer {
+  text-align: center;
+  color: rgb(216, 142, 216);
+  position: relative;
+  bottom: 20px;
+  font-size: 12px;
+}
+
+a .btn-success:hover {
+  cursor: pointer;
+  background-color: rgb(226, 218, 226);
+  border: 1px solid #dadde1;
+  transition: 150ms ease-in-out;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: rgb(216, 142, 216);
+}
+
+a.active:hover {
+  text-decoration: none;
+  cursor: default;
+  color: aliceblue;
+}
