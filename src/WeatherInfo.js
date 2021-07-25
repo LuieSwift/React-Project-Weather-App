@@ -1,36 +1,19 @@
 import react from "React"; 
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon"; 
+import WeatherTemperature from "./WeatherTemperature"; 
 
 export default function weatherInfo(props) {
 return (
     <div className="weatherInfo">
 <h1 id="city">{props.data.city}</h1>
       <div className="circle">
-        <img
-          src={props.data.imgUrl}
-          id="icon"
-          alt="icon"
-          width="150"
-          height="150"
-        />
+        <img WeatherIcon code={props.data.icon} size={52} />
         <span className="text">
           <h3 id="temp">
-            <strong>{props.data.temperature}</strong>
+            <strong> <WeatherTemperature celsius={props.data.temperature} />
+            </strong>
           </h3>
-          <span className="units">
-            <a
-              STYLE="text-decoration:none"
-              href="/"
-              id="celsius-link"
-              class="active"
-            >
-              °C
-            </a>
-            |
-            <a STYLE="text-decoration:none" href="/" id="fahrenheit-link">
-              °F
-            </a>
-          </span>
           <br />
           <p> 
           <FormattedDate date={props.data.date} />
@@ -57,7 +40,7 @@ return (
           <div className="col-2">
             <span className="weather-forecast-date">{props.data.day}</span>
             <br />
-            <img src={props.data.imgUrl} alt="icons" />
+            <img src={props.data.icon} alt="icons" />
             <br />
             <span className="weather-forecast-temperature-max"></span>
             {weatherData.high}/
