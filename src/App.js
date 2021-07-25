@@ -13,12 +13,12 @@ export default function App() {
         <div className="weather-app">
           <Weather defaultCity="Leeds" />
         </div>
+        </div>
         <footer>
     <a href="https://github.com/LuieSwift/React-Project-Weather-App" class="link">
       Open-source code</a>
     by Louise Swift
   </footer>
-      </div>
     </div>
   );
 }
