@@ -1,20 +1,21 @@
-import React from "react";
+import React, { userState } from "react";
 import "./Weather.css";
+import axios from "axios"; 
 
-export default function Weather() {
-  let weatherData = {
-    city: "Leeds",
-    temperature: 26,
-    date: "Sunday 10:00",
-    description: "Sunny",
-    imgUrl: "images/icons/01d.svg",
-    humidity: 80,
-    wind: 5,
-    high: 26,
-    low: 15,
-    day: "Mon"
-  };
+export default function Weather(props) {
+const [weatherData, setWeatherData] = userState({ ready: false }); 
+function handleResponse(response) {
+  setWeatherData({
+    ready: true,
+    temperature: response.data.main.temp, 
+    wind: response.data.main.wind.speed, 
+    city: response.data.name.city,
+    description: response.data.weather[0].description, 
+    humidity: response.data.main.humidity
+  }); 
+}
 
+if (weatherData.ready) {
   return (
     <div className="Searchcity">
       <form id="search-city">
@@ -101,4 +102,11 @@ export default function Weather() {
       </div>
     </div>
   );
+} else {
+const apiKey = "b3566d495f743e9128f9d94b40433e4b"; 
+let apiUrl = `api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`; 
+axios.get(apiUrl).then(handleResponse); 
+
+return "Loading..."; 
+}
 }

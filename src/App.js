@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Weather from "./Weather";
+import 'bootstrap/dist/css/bootstrap.css';
 
 import "./App.css";
 import "./Weather.css";
@@ -10,8 +11,13 @@ export default function App() {
     <div className="App">
       <div className="container">
         <div className="weather-app">
-          <Weather />
+          <Weather defaultCity="Leeds" />
         </div>
+        <footer>
+    <a href="https://github.com/LuieSwift/React-Project-Weather-App" class="link">
+      Open-source code</a>
+    by Louise Swift
+  </footer>
       </div>
     </div>
   );
