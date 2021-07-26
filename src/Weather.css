@@ -46,16 +46,18 @@ h1 {
   box-shadow: 3px 3px 7px rgb(177, 159, 255);
 }
 
-.circle img {
+.circle .img {
   margin: 0 auto;
   display: block;
   position: relative;
   bottom: -30px;
+  right: -105px;
+  top: 40px;
 }
 
 .circle .text {
   position: relative;
-  bottom: -5px;
+  bottom: -50px;
   color: aliceblue;
   text-align: center;
 }
