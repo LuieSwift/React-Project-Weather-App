@@ -10,16 +10,15 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temperature,
+      temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
-      city: response.data.name,
+      city: response.data.name
     });
   }
-
 
   function handleSubmit(event) {
     event.preventDefault();

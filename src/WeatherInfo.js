@@ -8,7 +8,9 @@ export default function weatherInfo(props) {
     <div className="weatherInfo">
       <h1 id="city">{props.data.city}</h1>
       <div className="circle">
-        <WeatherIcon code={props.data.icon} size={52} />
+        <div className="img">
+          <WeatherIcon code={props.data.icon} size={120} />{" "}
+        </div>
         <span className="text">
           <div>
             {" "}
@@ -32,11 +34,11 @@ export default function weatherInfo(props) {
         </div>
         <div class="col-4">
           <em>Humidity:</em>
-          <p id="humidity">{props.data.humidity}</p>
+          <p id="humidity">{props.data.humidity}%</p>
         </div>
         <div className="col-4">
           <em>Wind:</em>
-          <p id="windspeed">{props.data.wind}</p>
+          <p id="windspeed">{props.data.wind}mph</p>
         </div>
       </div>
       <hr />

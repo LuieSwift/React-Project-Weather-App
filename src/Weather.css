@@ -60,18 +60,7 @@ h1 {
   bottom: -50px;
   color: aliceblue;
   text-align: center;
-}
-
-.units {
-  position: relative;
-  right: -147px;
-  bottom: 5px;
-}
-
-a.active {
-  cursor: default;
-  color: aliceblue;
-  text-decoration: none;
+  font-size: 15px;
 }
 
 .row {
@@ -85,6 +74,13 @@ a.active {
   padding: 2px;
   position: relative;
   bottom: -20px;
+}
+
+.unit {
+  position: relative;
+  right: -5px;
+  bottom: 5px;
+  font-size: 15px;
 }
 
 .weather-forecast-date {
@@ -111,8 +107,7 @@ a.link {
 h3 {
   position: relative;
   bottom: -30px;
-  right: 30px;
-  font-size: 38px;
+  font-size: 28px;
 }
 
 em {
@@ -155,10 +150,4 @@ a .btn-success:hover {
 .link:hover {
   cursor: pointer;
   color: rgb(216, 142, 216);
-}
-
-a.active:hover {
-  text-decoration: none;
-  cursor: default;
-  color: aliceblue;
 }
