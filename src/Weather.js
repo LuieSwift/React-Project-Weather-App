@@ -38,8 +38,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Searchcity">
-        <form id="search-city">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} >
             <div className="mb-3">
               <input
                 placeholder="Enter a city"
@@ -51,7 +50,6 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
-          </form>
         </form>
         <a href role="button">
           <button
