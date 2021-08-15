@@ -11,6 +11,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
@@ -39,7 +40,8 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Searchcity">
-          <form onSubmit={handleSubmit} >
+        <form id="search-city">
+          <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <input
                 placeholder="Enter a city"
@@ -51,6 +53,7 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
+          </form>
         </form>
         <a href role="button">
           <button

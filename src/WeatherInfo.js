@@ -44,17 +44,7 @@ export default function weatherInfo(props) {
       <hr />
       <div className="weather-forecast" id="forecast">
         <div className="row">
-          <div className="col-2">
-            <span className="weather-forecast-date">{props.data.day}</span>
-            <br />
-            <img src={props.data.icon} alt="icons" />
-            <br />
-            <span className="weather-forecast-temperature-max"></span>
-            {props.data.high}/
-            <span className="weather-forecast-temperature-min">
-              {props.data.low}°C
-            </span>
-          </div>
+          <div className="col-2"></div>
         </div>
       </div>
     </div>
