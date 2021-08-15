@@ -53,15 +53,6 @@ export default function Weather(props) {
               />
             </div>
         </form>
-        <a href role="button">
-          <button
-            type="click"
-            className="btn-success"
-            id="current-location-button"
-          >
-            <img src="images/GPS.png" alt="GPS" width="50%" />
-          </button>
-        </a>
 
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
